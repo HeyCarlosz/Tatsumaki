@@ -22,14 +22,14 @@ client.on('message', async message => {
     if(message.channel.type == "dm") return
 
     const prefixo = botconfig.prefix
-    let command = message.content.split(" ")[0];
+    const command = message.content.split(" ")[0];
     command = command.slice(prefixo.length);
           
-        let args = message.content.slice(prefixo.length).trim().split(' ');
+        const args = message.content.slice(prefixo.length).trim().split(' ');
         if (!message.content.startsWith(prefixo)) return;   
             try {
                 delete require.cache[require.resolve(`./comandos/${command}.js`)];
-                let commandFile = require(`./comandos/${command}.js`)
+                const commandFile = require(`./comandos/${command}.js`)
                 commandFile.run(client, message, args, prefixo)
             } catch (erro) {
             console.log(erro.stack); 
