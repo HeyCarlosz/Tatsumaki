@@ -1,5 +1,5 @@
 
-# Tatsumaki - 0.11
+# Tatsumaki - 0.1
 
 ###### 💁‍ Um simples bot para Discord!
 > Feito em [Discord.JS](https://discord.js.org/#/docs)                                                                            
