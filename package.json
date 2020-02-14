@@ -1,0 +1,24 @@
+{
+  "name": "Tatsumaki",
+  "version": "1.0.0",
+  "description": "> Feito em [Discord.JS](https://discord.js.org/#/docs)                                                                            \r > Link de [CONVITE](https://discordapp.com/api/oauth2/authorize?client_id=677935017153921076&permissions=8&scope=bot)                                                                            \r > Servidor no [Discord](https://discord.gg/ET6vxew)",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeyCarlosz/Tatsumaki.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeyCarlosz/Tatsumaki/issues"
+  },
+  "homepage": "https://github.com/HeyCarlosz/Tatsumaki#readme"
+}
