@@ -1,23 +1,10 @@
 console.log("Starting...")
 const Discord = require('discord.js');
-const fs = require("fs"); 
 const client = new Discord.Client({
     autoReconnect: true,
     disableEveryone: true
 });
 const botconfig = require("./config.json");
-
-
-fs.readdir("./eventos/", (erro, files) => { 
-    if (erro) return console.error("[ERRO] " + erro); 
-    files.forEach(file => { 
-    let eventFunction = require(`./eventos/${file}`); 
-    let eventName = file.split(".")[0]; 
-    client.on(eventName, (...args) => 
-    eventFunction.run(client, ...args
-        )); 
-    }); 
-});
 
 client.on('ready', () => {
     console.log(`Hello World! Logged in as ${client.user.tag}!\n\n`);
