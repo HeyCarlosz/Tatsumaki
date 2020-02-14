@@ -7,7 +7,7 @@
 > Servidor no [Discord](https://discord.gg/ET6vxew)                                                                        
 
 
-# Como posso criar meu bot?? 🤔🤔
+# Como posso criar meu bot?? 🤔
 
 ###### 💁‍ Você deverá entrar nesse site [Discord Developer's](https://discordapp.com/developers/applications/), E fazer o `LOGIN` em sua conta no `Discord`. Após entrar no `Discord Developer's` Para criar uma Aplicação (Bot), clique em `New Application` è em seguida, coloque o Nome/Foto do Bot. <h6> Após isso, você devera ir na aba `BOT` ao lado clicar em `Add bot`. Para que sua Aplicação seja criada como um bot.
   
