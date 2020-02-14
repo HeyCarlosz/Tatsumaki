@@ -19,20 +19,19 @@ client.on('ready', () => {
   
 client.on('message', async message => {
     if(message.author.bot) return;
-    if(message.channel.type == "dm") return
+    if(message.channel.type == "dm") return;
 
-    const prefixo = botconfig.prefix
-    const command = message.content.split(" ")[0];
-    command = command.slice(prefixo.length);
-          
-        const args = message.content.slice(prefixo.length).trim().split(' ');
-        if (!message.content.startsWith(prefixo)) return;   
+    const prefix = botconfig.prefix
+    let command = message.content.split(" ")[0];
+    command = command.slice(prefix.length);        
+          let args = message.content.slice(prefix.length).trim().split(' ');
+          if (!message.content.startsWith(prefix)) return;
             try {
                 delete require.cache[require.resolve(`./comandos/${command}.js`)];
-                const commandFile = require(`./comandos/${command}.js`)
-                commandFile.run(client, message, args, prefixo)
+                let commandFile = require(`./comandos/${command}.js`)
+                commandFile.run(client, message, args, prefix)
             } catch (erro) {
-            console.log(erro.stack); 
+                console.log(erro.stack);
 }});
 
 client.on('message', async message => {
