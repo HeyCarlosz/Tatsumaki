@@ -29,5 +29,5 @@ Você deverá ir na aba **bot** ao lado e clicar em `Click to Reveal Token` ao l
 👾 Você apenas precisa criar um arquivo na pasta comandos: `NomeDoComando.js`, dentro deste arquivo você colocará o código do comando, para editar o arquivo, recomendo usar [Visual Studio Code](https://code.visualstudio.com/).
 
 <p align="center">
-  <img src="https://i.imgur.com/JHQ5Q45.jpg" width="1080"/>
+  <img src="https://i.imgur.com/ho44AKX.gif" width="1080"/>
 </p>
