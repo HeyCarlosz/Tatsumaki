@@ -7,7 +7,10 @@ const client = new Discord.Client({
 const fs = require("fs"); 
 const Enmap = require("enmap");
 const botconfig = require("./config.json");
+const Youtube = require('simple-youtube-api');
 
+client.youtube = new Youtube("YouTube Token");
+client.queues = {}
 client.commands = new Enmap();
 fs.readdir("./comandos/", (err, files) => {
     if (err) return console.error(err);
@@ -25,11 +28,12 @@ fs.readdir("./eventos/", (err, files) => {
         let eventFunction = require(`./eventos/${file}`); 
         let eventName = file.split(".")[0]; 
         client.on(eventName, (...args) => 
-        eventFunction.run(client, ...args
-        )); 
+        eventFunction.run(client, ...args)); 
     }); 
 });
 
+client.on("error", (aa) => console.error(aa)); 
+client.on("warn", (aa) => console.warn(aa));
 client.login(botconfig.token).catch(aa => {
     console.log(`Ocorreu um erro ao tentar logar.\n${aa}`);
 })
